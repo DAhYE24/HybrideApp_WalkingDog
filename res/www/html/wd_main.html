@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MainPage</title>
+<link rel="stylesheet" type="text/css" href="../css/walkdog.css">
+<script type="text/javascript" src="../libs/jquery-3.1.1.js"></script>
+</head>
+<body>
+	<img id="small_logo" src="small_logo.png">
+	<div id="container_register">
+		<div class="txt_notice" style="padding-top: 100px;">당신의 반려견</div>
+		<div class="txt_notice">정보를 등록해주세요</div>
+		<div class="txt_notice">
+			<button type="button" onclick="btnRegister()" class="btn_main">
+   				<img src="btn_register.png" class="btn_register" alt="button" />
+			</button>
+		</div>
+	</div>
+	<div id="container_timer" style="padding-top: 10px;">
+		<div id="timerBox">
+			<div style="padding-top: 0.5%;"><span id="time">00:00:00</span></div>
+			<button type="button" onclick="start()" class="btn_main">
+   				<img src="btn_start.png" class="btn_img" alt="button" />
+			</button>
+			<button type="button" onclick="pause()" class="btn_main">
+   				<img src="btn_pause.png" class="btn_img" alt="button" />
+			</button>
+			<button type="button" onclick="stop()" class="btn_main">
+   				<img src="btn_stop.png" class="btn_img" alt="button" />
+			</button>
+		</div>
+		<div id="mapBox">
+			<div id="txtAlert">
+				<span class="txt_alert" id="txtPetName">반려견</span>
+				<span class="txt_alert">의 적정 산책량은 </span>
+				<span class="txt_alert" id="txtPetTime">0분</span>
+				<span class="txt_alert">입니다</span>
+			</div>
+			<div id="divRefresh">			
+				<button type="button" onclick="btnRefresh" class="btn_main">
+   					<img src="btn_refresh.png" class="btn_img" alt="button" />
+				</button>	
+			</div>	
+		</div>
+		<div id="map"></div>
+	</div>
+</body>
+
+<script type="text/javascript" src="../js/mcore.min.js"></script>
+<script type="text/javascript" src="../js/walkdog/mainpage.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0gV4rdutLJPxiU-s3g0IsOBb4whiXDn4&callback=initMap" async defer></script>
+</html>

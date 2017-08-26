@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="../libs/jquery-3.1.1.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+<meta charset="UTF-8">
+<title>반려견 등록</title>
+<link rel="stylesheet" type="text/css" href="../css/walkdog.css">
+</head>
+<body>
+	<img id="small_logo" src="small_logo.png">
+	<div id="container_basic">
+		<div class="div_title" style="padding-top: 50px;">이름 : 
+			<input class="div_input" type="text" placeholder="반려견 이름" id="dogName">
+		</div>
+		<div class="div_title">종류 : 
+			<input class="div_input" type="text" placeholder="대형견/중형견/소형견 중 택1" id="dogType" >
+		</div>
+		<div class="div_title">
+		<button type="button" onclick="petInfoRegister()" class="btn_main">
+   			<img src="btn_register.png" class="btn_register" alt="button"/>
+		</button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/mcore.min.js"></script>
+<script type="text/javascript" src="../js/walkdog/registerpage.js"></script>
+</html>
